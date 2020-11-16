@@ -1,0 +1,50 @@
+<div>
+  <h1>Eat Da Burger!</h1>
+
+  <img src="/images/burger.jpg" alt="burgerpic">
+
+</div>
+
+<div id="burgersnoteaten">
+  <h2>Burgers that I would LOVE to eat!</h2>
+
+  <ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+    {{/each}}
+  </ul>
+
+</div>
+
+<div id="burgersdevoured">
+
+  <h2>Burgers that I have already tried/eaten</h2>
+
+  <ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    {{> burgers/burger-block devoured=false}}
+    {{/if}}
+    {{/each}}
+  </ul>
+
+</div>
+
+<br>
+
+<div>
+
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca">Burger Name:</label>
+      <input type="text" id="ca" name="name">
+    </div>
+
+    <button type="submit">Add Burger</button>
+  </form>
+
+</div>

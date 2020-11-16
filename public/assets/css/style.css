@@ -1,0 +1,38 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #f8e805;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+h1 {
+  color: #b42222;
+}
+
+body {
+  background-color: #f8bf05;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#burgersnoteaten {
+/* float: left; */
+}
+
+#burgersdevoured {
+/* float: left;
+left: 500px; */
+
+}
